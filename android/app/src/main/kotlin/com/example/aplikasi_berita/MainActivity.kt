@@ -1,4 +1,4 @@
-package com.example.projek_uas
+package com.example.aplikasi_berita
 
 import io.flutter.embedding.android.FlutterActivity
 

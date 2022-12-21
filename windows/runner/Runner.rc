@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "projek_uas" "\0"
+            VALUE "FileDescription", "aplikasi_berita" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "projek_uas" "\0"
+            VALUE "InternalName", "aplikasi_berita" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "projek_uas.exe" "\0"
-            VALUE "ProductName", "projek_uas" "\0"
+            VALUE "OriginalFilename", "aplikasi_berita.exe" "\0"
+            VALUE "ProductName", "aplikasi_berita" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

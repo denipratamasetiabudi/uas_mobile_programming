@@ -1,6 +1,6 @@
 {
-    "name": "projek_uas",
-    "short_name": "projek_uas",
+    "name": "aplikasi_berita",
+    "short_name": "aplikasi_berita",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
