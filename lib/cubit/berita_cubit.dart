@@ -16,5 +16,6 @@ class BeritaCubit extends Cubit<BeritaState> {
     emit(BeritaInitial());
     beritaModel = await beritaRequest.getBerita();
     emit(DataBerita(beritaModel));
+    
   }
 }

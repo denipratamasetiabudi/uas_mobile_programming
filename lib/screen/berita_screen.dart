@@ -22,7 +22,7 @@ class _BeritaScreenState extends State<BeritaScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('191011450378 | Bagas Gemilang Ryadi'),
+        title: Center(child: Text('191011450280 - Deni Pratama Setia Budi')),
       ),
       body: BlocBuilder<BeritaCubit, BeritaState>(
           bloc: beritaCubit,
@@ -40,60 +40,65 @@ class _BeritaScreenState extends State<BeritaScreen> {
               itemCount: beritaCubit.beritaModel.data?.posts?.length ?? 0,
               itemBuilder: (context, index) {
                 return Card(
-                  child: ListTile(
-                    contentPadding: EdgeInsets.symmetric(
-                      vertical: 18,
-                      horizontal: 18,
-                    ),
-                    title: Row(
-                      children: [
-                        Container(
-                          width: 90,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Image.network(beritaCubit
-                              .beritaModel.data!.posts![index].thumbnail!),
-                        ),
-                        SizedBox(
-                          width: 210,
-                          child: Padding(
-                            padding: const EdgeInsets.all(8),
-                            child: Column(
-                              children: [
-                                Text(
-                                  beritaCubit
-                                      .beritaModel.data!.posts![index].title!,
-                                  overflow: TextOverflow.ellipsis,
-                                  maxLines: 3,
-                                  style: TextStyle(
-                                    fontSize: 18,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(
-                                    bottom: 15,
-                                    top: 15,
-                                  ),
-                                  child: Text(
-                                    beritaCubit.beritaModel.data!.posts![index]
-                                        .pubDate!,
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                  ),
-                                ),
-                                Text(
-                                  beritaCubit.beritaModel.data!.posts![index]
-                                      .description!,
-                                  overflow: TextOverflow.ellipsis,
-                                  maxLines: 3,
-                                )
-                              ],
+                  margin: EdgeInsets.all(20),
+                  child: Center(
+                    child: ListTile(
+                      contentPadding: EdgeInsets.symmetric(
+                        vertical: 18,
+                        horizontal: 18,
+                      ),
+                      title: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Container(
+                            width: 90,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(10),
                             ),
+                            child: Image.network(beritaCubit
+                                .beritaModel.data!.posts![index].thumbnail!),
                           ),
-                        )
-                      ],
+                          SizedBox(
+                            width: 210,
+                            child: Padding(
+                              padding: const EdgeInsets.all(8),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    beritaCubit
+                                        .beritaModel.data!.posts![index].title!,
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 3,
+                                    style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(
+                                      bottom: 15,
+                                      top: 15,
+                                    ),
+                                    child: Text(
+                                      beritaCubit.beritaModel.data!
+                                          .posts![index].pubDate!,
+                                      overflow: TextOverflow.ellipsis,
+                                      maxLines: 1,
+                                    ),
+                                  ),
+                                  Text(
+                                    beritaCubit.beritaModel.data!.posts![index]
+                                        .description!,
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 3,
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                 );
